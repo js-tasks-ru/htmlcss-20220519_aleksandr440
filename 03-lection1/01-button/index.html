@@ -4,8 +4,52 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./button.css">
+        <style>
+
+          .btns-wrapper__row {
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+
+          .btns-wrapper__title {
+            font-size: 46px;
+            font-weight: 500;
+          }
+
+          .btns-wrapper__list {
+            list-style-type: none;
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+          }
+
+          .btns-wrapper__item:not(:last-child) {
+            margin-right: 33px;
+          }
+
+        </style>
     </head>
     <body>
-
+      <section class="btns-wrapper">
+        <div class="container">
+          <div class="btns-wrapper__row">
+            <h1 class="btns-wrapper__title">Buttons</h1>
+            <ul class="btns-wrapper__list">
+              <li class="btns-wrapper__item">
+                <button class="btn btn_primary">Primary</button>
+              </li>
+              <li class="btns-wrapper__item">
+                <button class="btn btn_secondary">Secondary</button>
+              </li>
+              <li class="btns-wrapper__item">
+                <button class="btn btn_alternate">Alternate</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </body>
 </html>
