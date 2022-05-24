@@ -1,6 +1,7 @@
 /* Стилизация аккордеона */
 .accordion {
   max-width: 730px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .accordion-item {
