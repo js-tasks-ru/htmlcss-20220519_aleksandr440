@@ -4,15 +4,81 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./accordion.css">
+        <style>
+          .accordion-wrapper__row {
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+
+            align-items: flex-start;
+            justify-content: space-between;
+
+            padding-top: 30px;
+          }
+
+          .accordion-wrapper__title {
+            font-family: 'Inter', sans-serif;
+            font-size: 38px;
+            font-weight: 500;
+          }
+
+          .accordion-wrapper_accordion {
+            flex:0 0 730px;
+          }
+
+        </style>
     </head>
     <body>
-        <details>
-            <summary>
-                Accordion item
-            </summary>
-            <p>
-                Hidden content
-            </p>
-        </details>
+        <section class="accordion-wrapper">
+          <div class="container">
+            <div class="accordion-wrapper__row">
+              <h1 class="accordion-wrapper__title">Accordion</h1>
+              <div class="accordion accordion-wrapper_accordion ">
+                <details class="accordion__item">
+                  <summary class="accordion__header">
+                     <span class="accordion__title">Lorem ipsum.</span>
+                     <div class="accordion__arrow">
+                       <img src="../../assets/images/arrow.svg" alt="arrow">
+                     </div>
+                  </summary>
+                  <p class="accordion__descr">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Necessitatibus cumque consequuntur eveniet odit impedit,
+                    voluptate in neque vitae dolor, incidunt illum. Illo et,
+                    alias sunt aspernatur accusamus animi molestias dolore!
+                  </p>
+                </details>
+                <details class="accordion__item">
+                  <summary class="accordion__header">
+                     <span class="accordion__title">Lorem ipsum.</span>
+                     <div class="accordion__arrow">
+                       <img src="../../assets/images/arrow.svg" alt="arrow">
+                     </div>
+                  </summary>
+                  <p class="accordion__descr">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Necessitatibus cumque consequuntur eveniet odit impedit,
+                    voluptate in neque vitae dolor, incidunt illum. Illo et,
+                    alias sunt aspernatur accusamus animi molestias dolore!
+                  </p>
+                </details>
+                <details class="accordion__item">
+                  <summary class="accordion__header">
+                     <span class="accordion__title">Lorem ipsum.</span>
+                     <div class="accordion__arrow">
+                       <img src="../../assets/images/arrow.svg" alt="arrow">
+                     </div>
+                  </summary>
+                  <p class="accordion__descr">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Necessitatibus cumque consequuntur eveniet odit impedit,
+                    voluptate in neque vitae dolor, incidunt illum. Illo et,
+                    alias sunt aspernatur accusamus animi molestias dolore!
+                  </p>
+                </details>
+              </div>
+            </div>
+          </div>
+        </section>
     </body>
 </html>
