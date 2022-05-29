@@ -29,11 +29,6 @@
     --secondary: var(--purple-2);
 }
 
-<<<<<<< HEAD
 html, body {
     font-family: 'Inter', sans-serif;
-=======
-body {
-    font-family: 'Roboto', sans-serif;
->>>>>>> 4df9ddf344f9dde8b776b91d91361c902e1cb8b0
 }
