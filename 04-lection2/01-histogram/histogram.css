@@ -51,6 +51,8 @@
   display: -ms-flex;
   display: flex;
   align-items: flex-end;
+  height: 50px;
+
   gap:1px;
 }
 
