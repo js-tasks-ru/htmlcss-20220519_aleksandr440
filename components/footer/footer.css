@@ -1,0 +1,23 @@
+.footer {
+  padding: 72px 0 136px 0;
+}
+
+.footer__inner {
+  text-align: center;
+  color:var(--black);
+}
+
+.footer__title {
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 48px;
+}
+
+.footer__descr {
+  max-width: 630px;
+  margin: 0 auto;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
