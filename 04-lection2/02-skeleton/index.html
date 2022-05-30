@@ -5,7 +5,41 @@
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./skeleton.css">
     </head>
-    <body>
+    <style>
+      .skeleton-wrapper__inner {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
 
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 50px;
+      }
+
+      .skeleton-wrapper_skeleton {
+        flex: 0 0 579px;
+      }
+    </style>
+    <body>
+      <div class="skeleton-wrapper">
+        <div class="container">
+          <div class="skeleton-wrapper__inner">
+            <h1 class="skeleton-wrapper__title">Skeleton</h1>
+            <div class="skeleton skeleton-wrapper_skeleton">
+              <div class="skeleton__header">
+                <div class="skeleton__avatar"></div>
+                <div class="skeleton__right">
+                  <div class="skeleton__item skeleton__item_small"></div>
+                  <div class="skeleton__item"></div>
+                </div>
+              </div>
+              <div class="skeleton__footer">
+                <div class="skeleton__item"></div>
+                <div class="skeleton__item"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </body>
 </html>
