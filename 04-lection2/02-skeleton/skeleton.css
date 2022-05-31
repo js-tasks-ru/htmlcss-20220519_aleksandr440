@@ -12,17 +12,14 @@
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-
-  align-items: center;
-  gap:16px;
-
+  flex-wrap: nowrap;
+  justify-content: space-between;
   margin-bottom: 24px;
 }
 
 .skeleton__avatar {
   width: 64px;
   height: 64px;
-
   border-radius: 50%;
   background: var(--grey-2);
 }
@@ -32,8 +29,8 @@
   display: -ms-flex;
   display: flex;
   flex-direction: column;
-  gap:8px;
-  flex:0 1 257px;
+  justify-content: space-around;
+  flex:0 1 433px;
 }
 
 .skeleton__item {
@@ -43,7 +40,11 @@
 }
 
 .skeleton__item_small {
-  max-width: 172px;
+  max-width: 40%;
+}
+
+.skeleton__item_medium {
+  max-width: 59%;
 }
 
 .skeleton__footer {
