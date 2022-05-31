@@ -4,15 +4,44 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./modal.css">
+        <link rel="stylesheet" href="../../03-lection1/01-button/button.css">
         <title>Modal</title>
+        <style>
+          body {
+            background: var(--grey-3);
+          }
+          .modal-wrapper__inner {
+            padding-top: 50px;
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            justify-content: center;
+          }
+
+          .modal-wrapper__button {
+            width: 189px;
+          }
+        </style>
     </head>
     <body>
       <div class="modal-wrapper">
         <div class="container">
           <div class="modal-wrapper__inner">
-            <div class="modal-wrapper__button"></div>
-            <div class="modal-wrapper__modal">
-              <div class="modal"></div>
+            <div class="modal-wrapper__button">
+              <button class="btn btn_primary" id="modal-open">Open modal</button>
+            </div>
+            <div class="modal" id="modal">
+              <div class="modal__close" id="modal-close"></div>
+              <h2 class="modal__title">
+                Modal title
+              </h2>
+              <p class="modal__body">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+              </p>
             </div>
           </div>
         </div>
