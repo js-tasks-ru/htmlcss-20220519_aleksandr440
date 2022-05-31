@@ -40,11 +40,11 @@
 }
 
 .skeleton__item_small {
-  max-width: 40%;
+  width: 40%;
 }
 
 .skeleton__item_medium {
-  max-width: 59%;
+  width: 59%;
 }
 
 .skeleton__footer {
