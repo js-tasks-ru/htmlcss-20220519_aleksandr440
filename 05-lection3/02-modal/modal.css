@@ -1,5 +1,16 @@
 .modal {
   box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(196, 196, 196, 0.5);
+  display: none;
+}
+
+.modal__window {
+
   padding: 30px 40px 23px 40px;
   max-width: 428px;
   background: var(--white);
@@ -9,8 +20,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Inter', sans-serif;
-
-  display: none;
 }
 
 .modal__close {
