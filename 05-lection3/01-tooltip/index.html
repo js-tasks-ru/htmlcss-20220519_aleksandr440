@@ -4,8 +4,30 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./tooltip.css">
+        <style>
+          .tooltip-wrapper__inner {
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            justify-content: center;
+            padding-top: 100px;
+          }
+        </style>
     </head>
     <body>
-
+      <div class="tooltip-wrapper">
+        <div class="container">
+          <div class="tooltip-wrapper__inner">
+            <div class="tooltip">
+              <div class="tooltip__trigger">
+                <img src="../../assets/images/Help.svg" alt="help">
+              </div>
+              <div class="tooltip__bubble">
+                Helper Text
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </body>
 </html>
