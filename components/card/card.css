@@ -4,19 +4,16 @@
   border-radius: 12px;
   height: 367px;
 
-  flex:0 0 calc(100% / 3 - 30px);
-
+  flex:0 1 350px;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   flex-direction: column;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
+  padding: 80px 30px 24px 26px;
 }
 
 .card__body {
   flex:1;
-  padding: 80px 24px 26px;
 }
 
 .card__title {
