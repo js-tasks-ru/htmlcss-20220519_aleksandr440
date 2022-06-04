@@ -59,3 +59,7 @@
   background: var(--blue-1);
   flex:1;
 }
+
+.histogram_small {
+  max-width: 300px;
+}
