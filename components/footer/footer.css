@@ -2,6 +2,11 @@
   padding: 72px 0 136px 0;
 }
 
+.footer_components {
+  padding: 72px 0 56px 0;
+  background: #F9FAFC;
+}
+
 .footer__inner {
   text-align: center;
   color:var(--black);
@@ -11,6 +16,16 @@
   font-weight: 500;
   font-size: 38px;
   line-height: 48px;
+}
+
+.footer__title_components {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--grey-3);
 }
 
 .footer__descr {
