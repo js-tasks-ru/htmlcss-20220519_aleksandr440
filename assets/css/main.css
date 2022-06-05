@@ -6,7 +6,7 @@
 @import '../../components/header/header.css';
 @import '../../components/footer/footer.css';
 @import '../../components/preview/preview.css';
-@import '../../components/icon/icon.css;'
+@import '../../components/icon/icon.css';
 
 :root {
     --white: #ffffff;
