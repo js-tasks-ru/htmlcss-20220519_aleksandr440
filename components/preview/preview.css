@@ -1,4 +1,15 @@
 .preview {
   flex:1;
   background: #F9FAFC;
+  padding: 68px 0 174px 0;
+}
+
+.preview__inner {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
 }
