@@ -7,6 +7,8 @@
 @import '../../components/footer/footer.css';
 @import '../../components/preview/preview.css';
 @import '../../components/icon/icon.css';
+@import '../../components/card/card.css';
+@import '../../04-lection2/01-histogram/histogram.css';
 
 :root {
     --white: #ffffff;
@@ -28,6 +30,10 @@
 
     --primary: var(--blue-2);
     --secondary: var(--purple-2);
+}
+
+*,*::after, *::before {
+  box-sizing: border-box;
 }
 
 html, body {

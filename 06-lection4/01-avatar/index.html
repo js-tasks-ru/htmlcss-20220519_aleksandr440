@@ -4,8 +4,27 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./avatar.css">
+
+        <style>
+          .avatar-wrapper__inner {
+            padding-top: 50px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+          }
+        </style>
     </head>
     <body>
+      <section class="avatar-wrapper">
+        <div class="container">
+          <div class="avatar-wrapper__inner">
+            <h1 class="title">Avatar</h1>
+            <div class="avatar">
+              <img class="avatar__image" src="./public/avatar-200.jpg" alt="avatar">
+            </div>
+          </div>
+        </div>
+      </section>
 
     </body>
 </html>
