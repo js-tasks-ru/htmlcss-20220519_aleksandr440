@@ -34,9 +34,6 @@
 }
 
 .accordion__arrow {
-  width: 16px;
-  height: 8px;
-
   transition: transform .2s ease-in-out;
 }
 
