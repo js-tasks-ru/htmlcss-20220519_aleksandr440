@@ -4,6 +4,10 @@
   padding: 68px 0 174px 0;
 }
 
+.preview__components {
+  padding-top: 36px;
+}
+
 .preview__inner {
   display: -webkit-flex;
   display: -ms-flex;
