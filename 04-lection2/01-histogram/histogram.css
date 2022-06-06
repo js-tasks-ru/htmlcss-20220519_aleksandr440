@@ -10,7 +10,6 @@
   flex:1;
 }
 
-
 .histogram__header {
   display: -webkit-flex;
   display: -ms-flex;
@@ -21,6 +20,7 @@
 
   margin-bottom: 6px;
 }
+
 .histogram__subheader {
   margin-bottom: 39px;
 }
@@ -62,7 +62,7 @@
   flex:1;
 }
 
-.histogram_small {
+.histogram_components {
   max-width: 300px;
 }
 
@@ -70,7 +70,7 @@
   .histogram_small {
     padding: 10px;
   }
-  
+
   .histogram_small .histogram__title {
     font-size: 10px;
   }

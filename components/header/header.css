@@ -24,4 +24,15 @@
     justify-content: center;
     margin-bottom: 48px;
   }
+
+  .header__inner {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header_components {
+    padding: 16px 0;
+  }
 }

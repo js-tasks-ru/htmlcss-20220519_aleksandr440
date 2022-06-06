@@ -59,13 +59,35 @@
   border-radius: 12px;
 }
 
+@media screen and (max-width: 769px) {
+  .preview__inner_components {
+    grid-template-columns: 1fr;
+    padding-top: 32px;
+  }
+
+  .preview__navigation {
+    display: none;
+  }
+
+  .preview__window {
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+  }
+}
+
 @media screen and (max-width: 376px) {
   .preview {
     padding-bottom: 30px;
+    background: var(--white);
+  }
+
+  .preview__components {
+    padding-top: 0;
   }
 
   .preview__inner {
     justify-content: space-between;
-    gap: 16px;
+    gap: 5px;
   }
 }
