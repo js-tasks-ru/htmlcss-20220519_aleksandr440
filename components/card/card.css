@@ -9,11 +9,16 @@
   display: -ms-flex;
   display: flex;
   flex-direction: column;
-  padding: 80px 30px 24px 26px;
+  padding: 0 30px 24px 26px;
 }
 
 .card__body {
   flex:1;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card__title {
