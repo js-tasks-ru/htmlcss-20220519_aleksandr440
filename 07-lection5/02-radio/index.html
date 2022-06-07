@@ -4,8 +4,58 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./radio.css">
+        <style>
+          .radios {
+            padding-top: 50px;
+          }
+
+          .radios__title {
+            font-family: 'Inter';
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: var(--grey-3);
+          }
+
+          .radios__wrapper {
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+          }
+        </style>
     </head>
     <body>
-
+      <div class="radios">
+        <div class="container">
+          <div class="radios__wrapper">
+            <h2 class="radios__title">Radio Button</h2>
+              <label class="radio">
+                <input type="radio" class="radio__input" name="radio">
+                <div class="radio__wrapper">
+                  <div class="radio__control"></div>
+                  <span class="radio__title">Default</span>
+                </div>
+              </label>
+              <label class="radio">
+                <input type="radio" class="radio__input" name="radio" checked>
+                <div class="radio__wrapper">
+                  <div class="radio__control"></div>
+                  <span class="radio__title">Selected</span>
+                </div>
+              </label>
+              <label class="radio">
+                <input type="radio" class="radio__input" name="radio" disabled>
+                <div class="radio__wrapper">
+                  <div class="radio__control"></div>
+                  <span class="radio__title">Disabled</span>
+                </div>
+              </label>
+          </div>
+        </div>
+      </div>
     </body>
 </html>
