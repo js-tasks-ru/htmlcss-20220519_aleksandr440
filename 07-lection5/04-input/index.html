@@ -4,8 +4,72 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./input.css">
+        <style>
+          .inputs {
+            padding-top: 50px;
+          }
+
+          .inputs__wrapper {
+            display: grid;
+            grid-template-columns: 350px 350px;
+            column-gap: 30px;
+            row-gap: 16px;
+          }
+        </style>
     </head>
     <body>
-
+      <div class="inputs">
+        <div class="container">
+          <div class="inputs__wrapper">
+              <label class="form-group">
+                  <span class="form-group__title">Label</span>
+                  <div class="form-group__wrapper">
+                    <input type="text" class="form-group__input" placeholder="Placeholder">
+                    <span class="form-group__icon"></span>
+                  </div>
+              </label>
+              <label class="form-group form-group__focus">
+                  <span class="form-group__title">Focus</span>
+                  <div class="form-group__wrapper">
+                    <input type="text" class="form-group__input" placeholder="Placeholder" value="Filled Input">
+                    <span class="form-group__icon"></span>
+                  </div>
+              </label>
+              <label class="form-group form-group_success">
+                  <span class="form-group__title">Success</span>
+                  <div class="form-group__wrapper">
+                    <input type="text" class="form-group__input" placeholder="Placeholder" value="Success">
+                    <span class="form-group__icon">
+                      <svg class="icon" xmlns="http://www.w3.org/2000/svg">
+                        <use href="../../assets/images/sprite.svg#success"></use>
+                      </svg>
+                    </span>
+                  </div>
+              </label>
+              <label class="form-group form-group_invalid">
+                  <span class="form-group__title">Error</span>
+                  <div class="form-group__wrapper">
+                    <input type="text" class="form-group__input" placeholder="Placeholder" value="Error">
+                    <span class="form-group__icon">
+                      <svg class="icon" xmlns="http://www.w3.org/2000/svg">
+                        <use href="../../assets/images/sprite.svg#error"></use>
+                      </svg>
+                    </span>
+                  </div>
+              </label>
+              <label class="form-group form-group_disabled">
+                  <span class="form-group__title">disabled</span>
+                  <div class="form-group__wrapper">
+                    <input type="text" class="form-group__input" placeholder="Placeholder" value="Disabled" disabled>
+                    <span class="form-group__icon">
+                      <svg class="icon" xmlns="http://www.w3.org/2000/svg">
+                        <use href="../../assets/images/sprite.svg#error"></use>
+                      </svg>
+                    </span>
+                  </div>
+              </label>
+          </div>
+        </div>
+      </div>
     </body>
 </html>
