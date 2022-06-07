@@ -36,3 +36,9 @@
   font-size: 16px;
   line-height: 24px;
 }
+
+@media screen and (max-width: 376px) {
+  .footer {
+    display: none;
+  }
+}

@@ -7,6 +7,20 @@
   background: var(--white);
   padding: 28px 30px 20px 26px;
   font-family: 'Inter', sans-serif;
+
+  flex:1;
+}
+
+.calendar_small {
+  max-width: 210px;
+}
+
+.calendar_small .calendar__title {
+  font-size: 14px;
+}
+
+.calendar_small .calendar__item {
+  font-size: 10px;
 }
 
 .calendar__title {
@@ -67,4 +81,21 @@
 
 .calendar__item_select {
   background: rgba(160, 177, 245, 0.2);
+}
+
+@media screen and (max-width: 376px) {
+  .calendar_small {
+    padding: 5px 10px 0 10px;
+    max-width: 100%;
+  }
+
+  .calendar_small .calendar__title {
+    font-size: 12px;
+    white-space: nowrap;
+    margin-bottom: 10px;
+  }
+
+  .calendar_small .calendar__item {
+    font-size: 10px;
+  }
 }

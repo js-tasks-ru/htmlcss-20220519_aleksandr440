@@ -1,7 +1,38 @@
 .header {
-  padding: 96px 0 77px 0;
+  padding: 24px 0 77px 0;
+}
+
+.header__top {
+  margin-bottom: 38px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
 }
 
 .header_components {
-  padding: 40px 0 40px 0;
+  background: #F9FAFC;
+  padding: 24px 0;
+}
+
+
+@media screen and (max-width: 376px) {
+  .header {
+    padding: 16px 0 69px 0;
+  }
+
+  .header__top {
+    justify-content: center;
+    margin-bottom: 48px;
+  }
+
+  .header__inner {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header_components {
+    padding: 16px 0;
+  }
 }

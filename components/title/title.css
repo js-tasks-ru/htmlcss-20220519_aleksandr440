@@ -17,3 +17,16 @@
   color: var(--grey-4);
   margin-bottom: 24px;
 }
+
+.title_header {
+  font-size: 50px;
+  line-height: 64px;
+  color: var(--black);
+}
+
+@media screen and (max-width: 376px) {
+  .title_header {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
