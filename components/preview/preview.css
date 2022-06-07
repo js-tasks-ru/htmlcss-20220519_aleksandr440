@@ -59,10 +59,11 @@
   border-radius: 12px;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 767px) {
+
   .preview__inner_components {
     grid-template-columns: 1fr;
-    padding-top: 32px;
+    padding-top: 0;
   }
 
   .preview__navigation {
