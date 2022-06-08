@@ -1,7 +1,7 @@
 .preview {
   flex:1;
   background: #F9FAFC;
-  padding: 68px 0 174px 0;
+  padding: 0 0 174px 0;
 }
 
 .preview__components {
@@ -9,13 +9,6 @@
 }
 
 .preview__inner {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
 }
 
 .preview__inner_components {
@@ -85,10 +78,5 @@
 
   .preview__components {
     padding-top: 0;
-  }
-
-  .preview__inner {
-    justify-content: space-between;
-    gap: 5px;
   }
 }
