@@ -54,6 +54,13 @@
   color: var(--grey-2);
 }
 
+.form-group_focus .form-group__input {
+  outline: none;
+  background: var(--white);
+  border: 1px solid var(--blue-1);
+  box-shadow: 0px 1px 1px rgba(51, 154, 240, 0.1);
+}
+
 .form-group__title {
   font-weight: 500;
   font-size: 12px;
@@ -82,13 +89,6 @@
 }
 
 .form-group__input:focus {
-  outline: none;
-  background: #FFFFFF;
-  border: 1px solid var(--blue-1);
-  box-shadow: 0px 1px 1px rgba(51, 154, 240, 0.1);
-}
-
-.form-group__focus .form-group__input {
   outline: none;
   background: #FFFFFF;
   border: 1px solid var(--blue-1);
