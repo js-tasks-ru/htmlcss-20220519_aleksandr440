@@ -8,9 +8,6 @@
   padding-top: 36px;
 }
 
-.preview__inner {
-}
-
 .preview__inner_components {
   display: grid;
   grid-template-columns: 229px 1fr;
@@ -53,7 +50,6 @@
 }
 
 @media screen and (max-width: 767px) {
-
   .preview__inner_components {
     grid-template-columns: 1fr;
     padding-top: 0;
