@@ -1,21 +1,11 @@
 .preview {
   flex:1;
   background: #F9FAFC;
-  padding: 68px 0 174px 0;
+  padding: 0 0 174px 0;
 }
 
 .preview__components {
   padding-top: 36px;
-}
-
-.preview__inner {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
 }
 
 .preview__inner_components {
@@ -60,7 +50,6 @@
 }
 
 @media screen and (max-width: 767px) {
-
   .preview__inner_components {
     grid-template-columns: 1fr;
     padding-top: 0;
@@ -85,10 +74,5 @@
 
   .preview__components {
     padding-top: 0;
-  }
-
-  .preview__inner {
-    justify-content: space-between;
-    gap: 5px;
   }
 }
