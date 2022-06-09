@@ -3,7 +3,7 @@
   background: #F9FAFC;
 }
 
-.tabs input[type="radio"] {
+.tabs__input {
   appearance: none;
   position: absolute;
 }
@@ -23,7 +23,7 @@
   overflow-x:auto;
 }
 
-.tabs__list label {
+.tabs__control {
   cursor: pointer;
   padding-bottom: 8px;
 
