@@ -1,56 +1,53 @@
 <!DOCTYPE html>
 <!-- Страница с кнопкой -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./button.css">
-        <style>
+  <head>
+    <link rel="stylesheet" href="../../build/index.css" />
+    <style>
+      .btns-wrapper__row {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
 
-          .btns-wrapper__row {
-            display: -webkit-flex;
-            display: -ms-flex;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-          }
+      .btns-wrapper__title {
+        font-size: 46px;
+        font-weight: 500;
+      }
 
-          .btns-wrapper__title {
-            font-size: 46px;
-            font-weight: 500;
-          }
+      .btns-wrapper__list {
+        list-style-type: none;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        gap: 33px;
+      }
 
-          .btns-wrapper__list {
-            list-style-type: none;
-            display: -webkit-flex;
-            display: -ms-flex;
-            display: flex;
-            gap: 33px;
-          }
-
-          .btns-wrapper__item {
-            width: 189px;
-          }
-
-        </style>
-    </head>
-    <body>
-      <section class="btns-wrapper">
-        <div class="container">
-          <div class="btns-wrapper__row">
-            <h1 class="btns-wrapper__title">Buttons</h1>
-            <ul class="btns-wrapper__list">
-              <li class="btns-wrapper__item">
-                <button class="btn btn_primary">Primary</button>
-              </li>
-              <li class="btns-wrapper__item">
-                <button class="btn btn_secondary">Secondary</button>
-              </li>
-              <li class="btns-wrapper__item">
-                <button class="btn btn_alternate">Alternate</button>
-              </li>
-            </ul>
-          </div>
+      .btns-wrapper__item {
+        width: 189px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="btns-wrapper">
+      <div class="container">
+        <div class="btns-wrapper__row">
+          <h1 class="btns-wrapper__title">Buttons</h1>
+          <ul class="btns-wrapper__list">
+            <li class="btns-wrapper__item">
+              <button class="btn btn_primary">Primary</button>
+            </li>
+            <li class="btns-wrapper__item">
+              <button class="btn btn_secondary">Secondary</button>
+            </li>
+            <li class="btns-wrapper__item">
+              <button class="btn btn_alternate">Alternate</button>
+            </li>
+          </ul>
         </div>
-      </section>
-    </body>
+      </div>
+    </section>
+  </body>
 </html>

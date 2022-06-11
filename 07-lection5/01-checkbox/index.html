@@ -1,74 +1,112 @@
 <!DOCTYPE html>
 <!-- Страница чекбокса -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./checkbox.css">
-        <style>
-          .checkboxes {
-            padding-top: 50px;
-          }
-          .checkboxes__wrapper {
-            display: -webkit-flex;
-            display: -ms-flex;
-            display: flex;
+  <head>
+    <link rel="stylesheet" href="../../build/index.css" />
+    <style>
+      .checkboxes {
+        padding-top: 50px;
+      }
+      .checkboxes__wrapper {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
 
-            flex-direction: column;
-            gap: 16px;
-          }
+        flex-direction: column;
+        gap: 16px;
+      }
 
-          .checkboxes__title {
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 18px;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            color: var(--grey-3);
-          }
-        </style>
-    </head>
-    <body>
-      <section class="checkboxes">
-        <div class="container">
-          <div class="checkboxes__wrapper">
-            <h2 class="checkboxes__title">checkbox</h2>
-            <label class="checkbox">
-              <input type="checkbox" class="checkbox__input">
-              <div class="checkbox__wrapper">
-                <div class="checkbox__control">
-                  <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="checkbox__icon">
-                    <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </div>
-                <span class="checkbox__title">Default</span>
+      .checkboxes__title {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--grey-3);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="checkboxes">
+      <div class="container">
+        <div class="checkboxes__wrapper">
+          <h2 class="checkboxes__title">checkbox</h2>
+          <label class="checkbox">
+            <input type="checkbox" class="checkbox__input" />
+            <div class="checkbox__wrapper">
+              <div class="checkbox__control">
+                <svg
+                  width="15"
+                  height="13"
+                  viewBox="0 0 15 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="checkbox__icon"
+                >
+                  <path
+                    d="M1.5 7.5L5 11L13 2"
+                    stroke="white"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </div>
-            </label>
-            <label class="checkbox">
-              <input type="checkbox" class="checkbox__input" checked>
-              <div class="checkbox__wrapper">
-                <div class="checkbox__control">
-                  <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="checkbox__icon">
-                    <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </div>
-                <span class="checkbox__title">Checked</span>
+              <span class="checkbox__title">Default</span>
+            </div>
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" class="checkbox__input" checked />
+            <div class="checkbox__wrapper">
+              <div class="checkbox__control">
+                <svg
+                  width="15"
+                  height="13"
+                  viewBox="0 0 15 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="checkbox__icon"
+                >
+                  <path
+                    d="M1.5 7.5L5 11L13 2"
+                    stroke="white"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </div>
-            </label>
-            <label class="checkbox">
-              <input type="checkbox" class="checkbox__input" disabled>
-              <div class="checkbox__wrapper">
-                <div class="checkbox__control">
-                  <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="checkbox__icon">
-                    <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </div>
-                <span class="checkbox__title">Disabled</span>
+              <span class="checkbox__title">Checked</span>
+            </div>
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" class="checkbox__input" disabled />
+            <div class="checkbox__wrapper">
+              <div class="checkbox__control">
+                <svg
+                  width="15"
+                  height="13"
+                  viewBox="0 0 15 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="checkbox__icon"
+                >
+                  <path
+                    d="M1.5 7.5L5 11L13 2"
+                    stroke="white"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </div>
-            </label>
-          </div>
+              <span class="checkbox__title">Disabled</span>
+            </div>
+          </label>
         </div>
-      </section>
-    </body>
+      </div>
+    </section>
+  </body>
 </html>

@@ -17,6 +17,9 @@ module.exports = {
     require('postcss-nested-vars'),
     require('postcss-custom-properties'),
     require('autoprefixer'),
+    require('postcss-copy')({
+      dest: 'build/assets',
+    }),
     require('cssnano'),
   ],
 };

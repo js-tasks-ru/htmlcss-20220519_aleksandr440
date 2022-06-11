@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <!-- Страница с тултипом -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./tooltip.css">
-        <style>
-          .tooltip-wrapper__inner {
-            display: -webkit-flex;
-            display: -ms-flex;
-            display: flex;
-            justify-content: center;
-            padding-top: 100px;
-          }
-        </style>
-    </head>
-    <body>
-      <div class="tooltip-wrapper">
-        <div class="container">
-          <div class="tooltip-wrapper__inner">
-            <div class="tooltip">
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon tooltip__trigger">
-                <use href="../../assets/images/sprite.svg#help"></use>
-              </svg>
-              <div class="tooltip__bubble">
-                Helper Text
-              </div>
-            </div>
+  <head>
+    <link rel="stylesheet" href="../../build/index.css" />
+    <style>
+      .tooltip-wrapper__inner {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: center;
+        padding-top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tooltip-wrapper">
+      <div class="container">
+        <div class="tooltip-wrapper__inner">
+          <div class="tooltip">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon tooltip__trigger"
+            >
+              <use href="../../assets/images/sprite.svg#help"></use>
+            </svg>
+            <div class="tooltip__bubble">Helper Text</div>
           </div>
         </div>
       </div>
-    </body>
+    </div>
+  </body>
 </html>
