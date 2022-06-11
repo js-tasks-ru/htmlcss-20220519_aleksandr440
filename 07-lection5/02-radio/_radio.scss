@@ -1,0 +1,66 @@
+@import '../../assets/scss/mixins';
+
+.radio {
+  display: inline-block;
+  position: relative;
+  &__input {
+    appearance: none;
+    position: absolute;
+    &:checked ~ .radio__wrapper .radio__control {
+      border-color: var(--blue-1);
+    }
+    &:checked ~ .radio__wrapper .radio__control::after {
+      background: var(--blue-1);
+    }
+    &:focus ~ .radio__wrapper .radio__title {
+      text-decoration: underline;
+    }
+    &:disabled ~ .radio__wrapper .radio__control::after {
+      display: none;
+    }
+    &:disabled ~ .radio__wrapper .radio__control {
+      border-color: var(--grey-2);
+      background: var(--grey-2);
+    }
+    &:disabled ~ .radio__wrapper .radio__title {
+      color: var(--grey-2);
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__control {
+    width: 28px;
+    height: 28px;
+    background: var(--white);
+    border: 1px solid var(--grey-2);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__control::after {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: var(--white);
+    border-radius: 50%;
+  }
+
+  &__control,
+  &__control::after {
+    transition: all 0.2s linear;
+  }
+
+  &__title {
+    @include text('Inter', 400, 16px, 24px);
+    color: var(--grey-4);
+  }
+}

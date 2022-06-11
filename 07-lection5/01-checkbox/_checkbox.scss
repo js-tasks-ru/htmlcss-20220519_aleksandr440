@@ -1,0 +1,51 @@
+@import '../../assets/scss/mixins';
+
+.checkbox {
+  display: inline-block;
+  position: relative;
+  &__input {
+    appearance: none;
+    position: absolute;
+    &:checked ~ .checkbox__wrapper .checkbox__control {
+      background: var(--blue-1);
+      border-color: var(--blue-1);
+    }
+    &:checked ~ .checkbox__wrapper .checkbox__icon {
+      display: block;
+    }
+    &:focus ~ .checkbox__wrapper .checkbox__title {
+      text-decoration: underline;
+    }
+    &:disabled ~ .checkbox__wrapper .checkbox__control {
+      background: var(--grey-2);
+      border-color: var(--grey-2);
+    }
+    &:disabled ~ .checkbox__wrapper .checkbox__title {
+      color: var(--grey-2);
+    }
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  &__control {
+    width: 28px;
+    height: 28px;
+    background: var(--white);
+    border: 1px solid var(--grey-2);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s linear;
+  }
+  &__icon {
+    display: none;
+  }
+
+  &__title {
+    @include text('Inter', 400, 16px, 24px);
+    color: var(--grey-4);
+  }
+}
