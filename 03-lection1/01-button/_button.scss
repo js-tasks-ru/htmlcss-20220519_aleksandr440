@@ -1,0 +1,52 @@
+/* Стилизация кнопки */
+@import '../../assets/scss/mixins';
+
+.btn {
+  display: inline-block;
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  @include text('Roboto', 500, 16px);
+  padding: 15px 15px 14px;
+  border-radius: 8px;
+  height: 48px;
+  width: 100%;
+
+  transition: opacity 200ms ease-in-out, background 200ms ease-in-out,
+    border-color 200ms ease-in-out;
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  &_primary {
+    color: var(--white);
+    background-color: var(--blue-1);
+  }
+
+  &_primary:not(:disabled):hover {
+    background-color: var(--primary);
+  }
+
+  &_secondary {
+    color: var(--white);
+    background-color: var(--secondary);
+  }
+
+  &_secondary:not(:disabled):hover {
+    background-color: var(--purple-1);
+  }
+
+  &_alternate {
+    border: 1px solid var(--grey-3);
+    color: var(--grey-4);
+  }
+
+  &_alternate:not(:disabled):hover {
+    border-color: var(--black);
+  }
+
+  &_alternate:disabled {
+    opacity: 0.3;
+  }
+}
