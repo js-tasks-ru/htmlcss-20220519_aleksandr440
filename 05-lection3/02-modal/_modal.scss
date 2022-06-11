@@ -1,0 +1,43 @@
+@import '../../assets/scss/mixins';
+
+.modal {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(196, 196, 196, 0.5);
+  display: none;
+  &__window {
+    padding: 30px 40px 23px 40px;
+    max-width: 428px;
+    background: var(--white);
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Inter', sans-serif;
+  }
+
+  &__close {
+    position: absolute;
+    cursor: pointer;
+    top: 12px;
+    right: 12px;
+  }
+
+  &__title {
+    padding: 0;
+    margin: 0;
+    @include text(false, 600, 20px, 1.5, #334d6e);
+    margin-bottom: 14px;
+  }
+
+  &__body {
+    margin: 0;
+    @include text(false, 400, 16px, 1.5);
+    color: var(--grey-4);
+  }
+}
