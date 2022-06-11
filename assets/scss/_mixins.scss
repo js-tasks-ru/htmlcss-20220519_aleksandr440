@@ -1,0 +1,17 @@
+@mixin text($ff: false, $fw: false, $fz: false, $lh: false, $color: false) {
+  @if $ff {
+    font-family: $ff, sans-serif;
+  }
+  @if $fw {
+    font-weight: $fw;
+  }
+  @if $fz {
+    font-size: $fz;
+  }
+  @if $lh {
+    line-height: $lh;
+  }
+  @if $color {
+    color: $color;
+  }
+}

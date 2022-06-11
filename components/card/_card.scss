@@ -1,0 +1,38 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+.card {
+  background: var(--white);
+  box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+  border-radius: 12px;
+  height: 367px;
+
+  flex: 0 1 350px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px 24px 26px;
+
+  @media screen and (max-width: $md-phone) {
+    flex: 0 1 164px;
+    padding: 0 5px;
+    height: 210px;
+  }
+
+  &__body {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    margin: 0;
+    @include text('Roboto', 500, 21px, 25px);
+    color: var(--black);
+    text-align: center;
+
+    @media screen and (max-width: $md-phone) {
+      font-size: 16px;
+    }
+  }
+}

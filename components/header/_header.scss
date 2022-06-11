@@ -1,0 +1,30 @@
+@import '../../assets/scss/variables';
+
+.header {
+  padding: 24px 0 40px 0;
+  @media screen and (max-width: $md-phone) {
+    padding: 16px 0 69px 0;
+  }
+  &__top {
+    margin-bottom: 38px;
+    display: flex;
+    @media screen and (max-width: $md-phone) {
+      justify-content: center;
+      margin-bottom: 48px;
+    }
+  }
+
+  &_components {
+    background: #f9fafc;
+    padding: 24px 0;
+    @media screen and (max-width: $md-phone) {
+      padding: 16px 0;
+    }
+  }
+  &__inner {
+    @media screen and (max-width: $md-phone) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

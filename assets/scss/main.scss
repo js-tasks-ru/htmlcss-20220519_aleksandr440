@@ -1,0 +1,22 @@
+//------------main styles--------------------------------------
+@import './normilize';
+@import '../fonts/fonts.css';
+@import './variables-css';
+@import './main-styles';
+
+//--------components styles------------------------------------
+@import '../../components/container/container';
+@import '../../components/title/title';
+@import '../../components/page/page';
+@import '../../components/header/header';
+@import '../../components/footer/footer';
+@import '../../components/preview/preview';
+@import '../../components/icon/icon';
+@import '../../components/card/card';
+@import '../../components/logo/logo';
+@import '../../components/tabs/tabs';
+
+@import '../../04-lection2/01-histogram/histogram.css';
+@import '../../05-lection3/03-calendar/calendar.css';
+@import '../../05-lection3/01-tooltip/tooltip.css';
+@import '../../06-lection4/01-avatar/avatar.css';
