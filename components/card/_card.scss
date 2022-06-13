@@ -30,7 +30,11 @@
     @include text('Roboto', 500, 21px, 25px);
     color: var(--black);
     text-align: center;
-
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    &:hover {
+      color: var(--purple-2);
+    }
     @media screen and (max-width: $md-phone) {
       font-size: 16px;
     }

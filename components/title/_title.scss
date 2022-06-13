@@ -12,7 +12,6 @@
   &_window {
     @include text(false, 400, 24px, 38px);
     color: var(--grey-4);
-    margin-bottom: 24px;
   }
 
   &_header {

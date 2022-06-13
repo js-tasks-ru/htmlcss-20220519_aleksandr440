@@ -4,6 +4,9 @@
 .tabs {
   position: relative;
   background: #f9fafc;
+  &_components {
+    background: var(--white);
+  }
   &__input {
     appearance: none;
     position: absolute;
@@ -43,7 +46,9 @@
   #all-tab:checked ~ .tabs__scroller [for='all-tab'],
   #elements:checked ~ .tabs__scroller [for='elements'],
   #containers:checked ~ .tabs__scroller [for='containers'],
-  #templates:checked ~ .tabs__scroller [for='templates'] {
+  #templates:checked ~ .tabs__scroller [for='templates'],
+  #html:checked ~ .tabs__scroller [for='html'],
+  #scss:checked ~ .tabs__scroller [for='scss'] {
     color: var(--black);
     border-bottom: 5px solid var(--black);
   }
@@ -51,14 +56,18 @@
   #all-tab:checked ~ .tabs__content_all-tab,
   #elements:checked ~ .tabs__content_elements,
   #containers:checked ~ .tabs__content_containers,
-  #templates:checked ~ .tabs__content_templates {
+  #templates:checked ~ .tabs__content_templates,
+  #html:checked ~ .tabs__content_html,
+  #scss:checked ~ .tabs__content_scss {
     display: block;
   }
 
   #all-tab:not(:checked) ~ .tabs__content_all-tab,
   #elements:not(:checked) ~ .tabs__content_elements,
   #containers:not(:checked) ~ .tabs__content_containers,
-  #templates:not(:checked) ~ .tabs__content_templates {
+  #templates:not(:checked) ~ .tabs__content_templates,
+  #html:not(:checked) ~ .tabs__content_html,
+  #scss:not(:checked) ~ .tabs__content_scss {
     display: none;
   }
 }
