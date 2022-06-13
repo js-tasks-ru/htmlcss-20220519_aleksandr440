@@ -1,38 +1,41 @@
 @import '../../assets/scss/variables';
+
 @import '../../assets/scss/mixins';
 
 .footer {
-  padding: 72px 0 136px 0;
-  @media screen and (max-width: $md-phone) {
-    display: none;
-  }
+    padding: 72px 0 136px 0;
 
-  &_components {
-    padding: 72px 0 56px 0;
-    background: #f9fafc;
-  }
+    @media screen and (max-width: $md-phone) {
+        display: none;
+    }
 
-  &__inner {
-    text-align: center;
-    color: var(--black);
-  }
+    &_components {
+        padding: 72px 0 56px 0;
+        background: #f9fafc;
+    }
 
-  &__title {
-    @include text(false, 500, 38px, 48px);
-  }
+    &__inner {
+        text-align: center;
+        color: var(--black);
+    }
 
-  &__title_components {
-    @include text(false, 500, 12px, 18px);
+    &__title {
 
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--grey-3);
-  }
+        @include text(false, 500, 38px, 48px);
+    }
 
-  &__descr {
-    max-width: 630px;
-    margin: 0 auto;
+    &__title_components {
 
-    @include text(false, 400, 16px, 24px);
-  }
+        @include text(false, 500, 12px, 18px);
+        letter-spacing: .04em;
+        text-transform: uppercase;
+        color: var(--grey-3);
+    }
+
+    &__descr {
+        max-width: 630px;
+        margin: 0 auto;
+
+        @include text(false, 400, 16px, 24px);
+    }
 }

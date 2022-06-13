@@ -1,87 +1,104 @@
 @import '../../assets/scss/mixins';
+
 @import '../../assets/scss/variables';
 
 .histogram {
-  border: 1px solid var(--grey-3);
-  border-radius: 8px;
-  background: var(--white);
-  padding: 16px 24px 24px 26px;
-  box-sizing: border-box;
-  @include text('Inter', 400);
-  flex: 1;
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    background: var(--white);
+    padding: 16px 24px 24px 26px;
+    box-sizing: border-box;
 
-  &__header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 6px;
-  }
-
-  &__subheader {
-    margin-bottom: 39px;
-  }
-
-  &__number {
-    @include text(false, false, 20px, 1.2);
-    color: var(--black);
-  }
-
-  &__title {
-    margin: 0;
-    @include text(false, false, 16px, 1.5);
-    color: var(--black);
-    opacity: 0.8;
-  }
-
-  &__link {
-    text-decoration: none;
-    @include text(false, false, 16px, 1.5);
-    color: var(--blue-1);
-  }
-
-  &__body {
-    display: flex;
-    align-items: flex-end;
-    height: 50px;
-    gap: 1px;
-  }
-
-  &__item {
-    background: var(--blue-1);
+    @include text('Inter', 400);
     flex: 1;
-  }
 
-  &_components {
-    max-width: 300px;
-  }
-  &_small {
-    @media screen and (max-width: $md-tablet) {
-      padding: 10px;
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 6px;
     }
-    .histogram_title {
-      @media screen and (max-width: $md-tablet) {
-        font-size: 10px;
-      }
+
+    &__subheader {
+        margin-bottom: 39px;
     }
-    .histogram__link {
-      @media screen and (max-width: $md-tablet) {
-        font-size: 10px;
-      }
+
+    &__number {
+
+        @include text(false, false, 20px, 1.2);
+        color: var(--black);
     }
-    .histogram__subheader {
-      @media screen and (max-width: $md-tablet) {
-        margin-bottom: 5px;
-      }
+
+    &__title {
+        margin: 0;
+
+        @include text(false, false, 16px, 1.5);
+        color: var(--black);
+        opacity: .8;
     }
-    .histogram__number {
-      @media screen and (max-width: $md-tablet) {
-        font-size: 12px;
-      }
+
+    &__link {
+        text-decoration: none;
+
+        @include text(false, false, 16px, 1.5);
+        color: var(--blue-1);
     }
-    .histogram__body {
-      @media screen and (max-width: $md-tablet) {
-        height: 30px;
-      }
+
+    &__body {
+        display: flex;
+        align-items: flex-end;
+        height: 50px;
+        gap: 1px;
     }
-  }
+
+    &__item {
+        background: var(--blue-1);
+        flex: 1;
+    }
+
+    &_components {
+        max-width: 300px;
+    }
+
+    &_small {
+
+        @media screen and (max-width: $md-tablet) {
+            padding: 10px;
+        }
+
+        .histogram_title {
+
+            @media screen and (max-width: $md-tablet) {
+                font-size: 10px;
+            }
+        }
+
+        .histogram__link {
+
+            @media screen and (max-width: $md-tablet) {
+                font-size: 10px;
+            }
+        }
+
+        .histogram__subheader {
+
+            @media screen and (max-width: $md-tablet) {
+                margin-bottom: 5px;
+            }
+        }
+
+        .histogram__number {
+
+            @media screen and (max-width: $md-tablet) {
+                font-size: 12px;
+            }
+        }
+
+        .histogram__body {
+
+            @media screen and (max-width: $md-tablet) {
+                height: 30px;
+            }
+        }
+    }
 }

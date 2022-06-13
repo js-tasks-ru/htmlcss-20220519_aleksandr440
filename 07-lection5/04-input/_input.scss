@@ -1,74 +1,90 @@
 @import '../../assets/scss/mixins';
 
 .form-group {
-  font-family: 'Inter', sans-serif;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  width: 100%;
-  &__wrapper {
-    position: relative;
-  }
-  &__icon {
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 16px;
-    color: var(--blue-2);
-    display: none;
-  }
-  &_success &__icon {
-    display: block;
-  }
-  &_success &__input:focus {
-    border-color: var(--grey-2);
-  }
-  &_invalid &__icon {
-    color: var(--red);
-    display: block;
-  }
-  &_invalid &__input:focus {
-    border-color: var(--red);
-  }
-  &_invalid &__input {
-    border-color: var(--red);
-  }
-  &_disabled,
-  &_disabled &__input {
-    cursor: not-allowed;
-  }
-  &_disabled &__input {
-    color: var(--grey-2);
-  }
-  &_focus &__input {
-    outline: none;
-    background: var(--white);
-    border: 1px solid var(--blue-1);
-    box-shadow: 0px 1px 1px rgba(51, 154, 240, 0.1);
-  }
-  &__title {
-    @include text(false, 500, 12px, 18px);
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--grey-3);
-  }
-  &__input {
-    background: var(--white);
-    border: 1px solid var(--grey-2);
-    border-radius: 8px;
-    @include text(false, 400, 20px, 26px);
-    padding: 17px 24px 13px 24px;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     width: 100%;
-    &::placeholder {
-      color: var(--grey-2);
+
+    &__wrapper {
+        position: relative;
     }
-    &:focus {
-      outline: none;
-      background: #ffffff;
-      border: 1px solid var(--blue-1);
-      box-shadow: 0px 1px 1px rgba(51, 154, 240, 0.1);
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 16px;
+        color: var(--blue-2);
+        display: none;
     }
-  }
+
+    &_success &__icon {
+        display: block;
+    }
+
+    &_success &__input:focus {
+        border-color: var(--grey-2);
+    }
+
+    &_invalid &__icon {
+        color: var(--red);
+        display: block;
+    }
+
+    &_invalid &__input:focus {
+        border-color: var(--red);
+    }
+
+    &_invalid &__input {
+        border-color: var(--red);
+    }
+
+    &_disabled,
+    &_disabled &__input {
+        cursor: not-allowed;
+    }
+
+    &_disabled &__input {
+        color: var(--grey-2);
+    }
+
+    &_focus &__input {
+        outline: none;
+        background: var(--white);
+        border: 1px solid var(--blue-1);
+        box-shadow: 0px 1px 1px rgba(51, 154, 240, .1);
+    }
+
+    &__title {
+
+        @include text(false, 500, 12px, 18px);
+        letter-spacing: .04em;
+        text-transform: uppercase;
+        color: var(--grey-3);
+    }
+
+    &__input {
+        background: var(--white);
+        border: 1px solid var(--grey-2);
+        border-radius: 8px;
+
+        @include text(false, 400, 20px, 26px);
+        padding: 17px 24px 13px 24px;
+        width: 100%;
+
+        &::placeholder {
+            color: var(--grey-2);
+        }
+
+        &:focus {
+            outline: none;
+            background: #ffffff;
+            border: 1px solid var(--blue-1);
+            box-shadow: 0px 1px 1px rgba(51, 154, 240, .1);
+        }
+    }
 }
