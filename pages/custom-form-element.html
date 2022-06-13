@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cusom form elements</title>
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css"
+    />
+    <link rel="stylesheet" href="../build/index.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="header header_components">
+        <div class="container">
+          <div class="header__inner">
+            <div class="logo">
+              <a href="#" class="logo__link">
+                <img
+                  src="../assets/images/logo.svg"
+                  alt="logo"
+                  class="logo__image"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <main class="preview preview__components">
+        <div class="container">
+          <div class="preview__inner preview__inner_components">
+            <nav class="preview__navigation">
+              <h3 class="title title_nav">Components</h3>
+              <ul class="preview__list">
+                <li class="preview__item">
+                  <a href="#" class="preview__link">Modal</a>
+                </li>
+                <li class="preview__item">
+                  <a href="./tooltip.html" class="preview__link">Tooltip</a>
+                </li>
+                <li class="preview__item">
+                  <a href="./avatar.html" class="preview__link">Avatar</a>
+                </li>
+                <li class="preview__item">
+                  <a href="./calendar.html" class="preview__link">Calendar</a>
+                </li>
+                <li class="preview__item">
+                  <a href="./histogram.html" class="preview__link">Histogram</a>
+                </li>
+                <li class="preview__item">
+                  <a href="#" class="preview__link preview__link_active"
+                    >Custom form elements</a
+                  >
+                </li>
+                <li class="preview__item preview__item_main">
+                  <a href="../index.html" class="preview__link">Main page</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="preview__window">
+              <h4 class="title title_window">Custom form elements</h4>
+              <div class="preview__wrapper">
+                <div class="preview__wrapper preview__wrapper_flex">
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input" />
+                    <div class="checkbox__wrapper">
+                      <div class="checkbox__control">
+                        <svg
+                          width="15"
+                          height="13"
+                          viewBox="0 0 15 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="checkbox__icon"
+                        >
+                          <path
+                            d="M1.5 7.5L5 11L13 2"
+                            stroke="white"
+                            stroke-width="3"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <span class="checkbox__title">Default</span>
+                    </div>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input" checked />
+                    <div class="checkbox__wrapper">
+                      <div class="checkbox__control">
+                        <svg
+                          width="15"
+                          height="13"
+                          viewBox="0 0 15 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="checkbox__icon"
+                        >
+                          <path
+                            d="M1.5 7.5L5 11L13 2"
+                            stroke="white"
+                            stroke-width="3"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <span class="checkbox__title">Checked</span>
+                    </div>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input" disabled />
+                    <div class="checkbox__wrapper">
+                      <div class="checkbox__control">
+                        <svg
+                          width="15"
+                          height="13"
+                          viewBox="0 0 15 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="checkbox__icon"
+                        >
+                          <path
+                            d="M1.5 7.5L5 11L13 2"
+                            stroke="white"
+                            stroke-width="3"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <span class="checkbox__title">Disabled</span>
+                    </div>
+                  </label>
+                </div>
+                <div class="preview__wrapper preview__wrapper_flex">
+                  <label class="radio">
+                    <input type="radio" class="radio__input" name="radio" />
+                    <div class="radio__wrapper">
+                      <div class="radio__control"></div>
+                      <span class="radio__title">Default</span>
+                    </div>
+                  </label>
+                  <label class="radio">
+                    <input
+                      type="radio"
+                      class="radio__input"
+                      name="radio"
+                      checked
+                    />
+                    <div class="radio__wrapper">
+                      <div class="radio__control"></div>
+                      <span class="radio__title">Selected</span>
+                    </div>
+                  </label>
+                  <label class="radio">
+                    <input
+                      type="radio"
+                      class="radio__input"
+                      name="radio"
+                      disabled
+                    />
+                    <div class="radio__wrapper">
+                      <div class="radio__control"></div>
+                      <span class="radio__title">Disabled</span>
+                    </div>
+                  </label>
+                </div>
+                <div class="preview__wrapper preview__wrapper_flex">
+                  <label class="toggle">
+                    <input class="toggle__input" type="checkbox" />
+                    <div class="toggle__wrapper">
+                      <div class="toggle__control"></div>
+                      <span class="toggle__title">Off</span>
+                    </div>
+                  </label>
+                  <label class="toggle">
+                    <input class="toggle__input" type="checkbox" checked />
+                    <div class="toggle__wrapper">
+                      <div class="toggle__control"></div>
+                      <span class="toggle__title">On</span>
+                    </div>
+                  </label>
+                  <label class="toggle">
+                    <input class="toggle__input" type="checkbox" disabled />
+                    <div class="toggle__wrapper">
+                      <div class="toggle__control"></div>
+                      <span class="toggle__title">Disabled</span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="tabs tabs_components">
+                <input
+                  class="tabs__input"
+                  type="radio"
+                  name="tabs"
+                  id="html"
+                  checked
+                />
+                <input class="tabs__input" type="radio" name="tabs" id="scss" />
+                <div class="tabs__scroller">
+                  <div class="tabs__list">
+                    <label class="tabs__control" for="html">HTML</label>
+                    <label class="tabs__control" for="scss">SCSS</label>
+                  </div>
+                </div>
+                <div class="tabs__content tabs__content_html">
+                  <pre>
+                    <code class="language-html">
+         &lt;label class="checkbox"&gt;
+           &lt;input type="checkbox" class="checkbox__input" /&gt;
+           &lt;div class="checkbox__wrapper"&gt;
+             &lt;div class="checkbox__control"&gt;
+               &lt;svg
+                 width="15"
+                 height="13"
+                 viewBox="0 0 15 13"
+                 fill="none"
+                 xmlns="http://www.w3.org/2000/svg"
+                 class="checkbox__icon"
+               &gt;
+                 &lt;path
+                   d="M1.5 7.5L5 11L13 2"
+                   stroke="white"
+                   stroke-width="3"
+                   stroke-linecap="round"
+                   stroke-linejoin="round"
+                 /&gt;
+               &lt;/svg&gt;
+             &lt;/div&gt;
+             &lt;span class="checkbox__title"&gt;Default&lt;/span&gt;
+           &lt;/div&gt;
+         &lt;/label&gt;
+         &lt;label class="checkbox"&gt;
+           &lt;input type="checkbox" class="checkbox__input" checked /&gt;
+           &lt;div class="checkbox__wrapper"&gt;
+             &lt;div class="checkbox__control"&gt;
+               &lt;svg
+                 width="15"
+                 height="13"
+                 viewBox="0 0 15 13"
+                 fill="none"
+                 xmlns="http://www.w3.org/2000/svg"
+                 class="checkbox__icon"
+               &gt;
+                 &lt;path
+                   d="M1.5 7.5L5 11L13 2"
+                   stroke="white"
+                   stroke-width="3"
+                   stroke-linecap="round"
+                   stroke-linejoin="round"
+                 /&gt;
+               &lt;/svg&gt;
+             &lt;/div&gt;
+             &lt;span class="checkbox__title"&gt;Checked&lt;/span&gt;
+           &lt;/div&gt;
+         &lt;/label&gt;
+         &lt;label class="checkbox"&gt;
+           &lt;input type="checkbox" class="checkbox__input" disabled /&gt;
+           &lt;div class="checkbox__wrapper"&gt;
+             &lt;div class="checkbox__control"&gt;
+               &lt;svg
+                 width="15"
+                 height="13"
+                 viewBox="0 0 15 13"
+                 fill="none"
+                 xmlns="http://www.w3.org/2000/svg"
+                 class="checkbox__icon"
+               &gt;
+                 &lt;path
+                   d="M1.5 7.5L5 11L13 2"
+                   stroke="white"
+                   stroke-width="3"
+                   stroke-linecap="round"
+                   stroke-linejoin="round"
+                 /&gt;
+               &lt;/svg&gt;
+             &lt;/div&gt;
+             &lt;span class="checkbox__title"&gt;Disabled&lt;/span&gt;
+           &lt;/div&gt;
+         &lt;/label&gt;
+                    </code>
+                  </pre>
+                </div>
+                <div class="tabs__content tabs__content_scss">
+                  <pre>
+                    <code class="language-scss">
+          .checkbox {
+            display: inline-block;
+            position: relative;
+            &__input {
+              appearance: none;
+              position: absolute;
+              &:checked ~ .checkbox__wrapper .checkbox__control {
+                background: var(--blue-1);
+                border-color: var(--blue-1);
+              }
+              &:checked ~ .checkbox__wrapper .checkbox__icon {
+                display: block;
+              }
+              &:focus ~ .checkbox__wrapper .checkbox__title {
+                text-decoration: underline;
+              }
+              &:disabled ~ .checkbox__wrapper .checkbox__control {
+                background: var(--grey-2);
+                border-color: var(--grey-2);
+              }
+              &:disabled ~ .checkbox__wrapper .checkbox__title {
+                color: var(--grey-2);
+              }
+            }
+            &__wrapper {
+              display: flex;
+              align-items: center;
+              gap: 12px;
+            }
+            &__control {
+              width: 28px;
+              height: 28px;
+              background: var(--white);
+              border: 1px solid var(--grey-2);
+              border-radius: 4px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              transition: all 0.2s linear;
+            }
+            &__icon {
+              display: none;
+            }
+          
+            &__title {
+              @include text('Inter', 400, 16px, 24px);
+              color: var(--grey-4);
+            }
+          }
+                        
+                    </code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="footer footer_components">
+        <div class="container">
+          <div class="footer__inner">
+            <h2 class="title footer__title footer__title_components">
+              Reusable component library
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>

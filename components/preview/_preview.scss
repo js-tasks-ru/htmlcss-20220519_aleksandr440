@@ -16,11 +16,18 @@
     }
   }
   &__wrapper {
+    display: flex;
+    gap: 10px;
     &_pl {
       margin-left: 50px;
     }
     &_pt {
       padding-top: 50px;
+    }
+    &_flex {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
     }
   }
   &__inner_components {
