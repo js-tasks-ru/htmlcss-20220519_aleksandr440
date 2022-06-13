@@ -24,7 +24,6 @@
     }
 
     &__number {
-
         @include text(false, false, 20px, 1.2);
         color: var(--black);
     }
@@ -34,7 +33,7 @@
 
         @include text(false, false, 16px, 1.5);
         color: var(--black);
-        opacity: .8;
+        opacity: 0.8;
     }
 
     &__link {

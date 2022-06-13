@@ -46,7 +46,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: all .2s linear;
+        transition: all 0.2s linear;
     }
 
     &__icon {
@@ -54,7 +54,6 @@
     }
 
     &__title {
-
         @include text('Inter', 400, 16px, 24px);
         color: var(--grey-4);
     }

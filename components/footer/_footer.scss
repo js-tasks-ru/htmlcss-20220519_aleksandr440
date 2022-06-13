@@ -1,5 +1,4 @@
 @import '../../assets/scss/variables';
-
 @import '../../assets/scss/mixins';
 
 .footer {
@@ -20,14 +19,12 @@
     }
 
     &__title {
-
         @include text(false, 500, 38px, 48px);
     }
 
     &__title_components {
-
         @include text(false, 500, 12px, 18px);
-        letter-spacing: .04em;
+        letter-spacing: 0.04em;
         text-transform: uppercase;
         color: var(--grey-3);
     }

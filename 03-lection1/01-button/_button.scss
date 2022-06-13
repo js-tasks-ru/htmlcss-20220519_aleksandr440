@@ -18,7 +18,7 @@
 
     &:disabled {
         cursor: not-allowed;
-        opacity: .5;
+        opacity: 0.5;
     }
 
     &_primary {
@@ -49,6 +49,6 @@
     }
 
     &_alternate:disabled {
-        opacity: .3;
+        opacity: 0.3;
     }
 }

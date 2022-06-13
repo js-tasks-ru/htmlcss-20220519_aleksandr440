@@ -1,7 +1,6 @@
 @import './variables';
 
 @mixin text($ff: false, $fw: false, $fz: false, $lh: false, $color: false) {
-
     @if $ff {
         font-family: $ff, sans-serif;
     }

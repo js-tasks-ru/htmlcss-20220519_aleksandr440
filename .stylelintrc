@@ -15,7 +15,7 @@
         "media-feature-colon-space-before": "never",
         "max-empty-lines": 5,
         "indentation": 4,
-        "number-leading-zero": "never",
+        "number-leading-zero": "always",
         "number-no-trailing-zeros": true,
         "selector-list-comma-space-before": "never",
         "selector-list-comma-newline-after": "always",

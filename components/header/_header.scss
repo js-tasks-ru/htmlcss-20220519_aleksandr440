@@ -27,7 +27,6 @@
     }
 
     &__inner {
-
         @include media('max', 'md-phone') {
             display: flex;
             justify-content: center;

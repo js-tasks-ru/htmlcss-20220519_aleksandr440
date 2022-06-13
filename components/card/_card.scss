@@ -1,10 +1,9 @@
 @import '../../assets/scss/variables';
-
 @import '../../assets/scss/mixins';
 
 .card {
     background: var(--white);
-    box-shadow: 0px 2px 4px rgba(33, 36, 41, .05);
+    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 12px;
     height: 367px;
     flex: 0 1 350px;
@@ -39,7 +38,7 @@
         color: var(--black);
         text-align: center;
         text-decoration: none;
-        transition: color .3s ease-in-out;
+        transition: color 0.3s ease-in-out;
 
         &:hover {
             color: var(--purple-2);
