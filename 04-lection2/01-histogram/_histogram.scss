@@ -61,42 +61,36 @@
     }
 
     &_small {
-
-        @media screen and (max-width: $md-tablet) {
+        @include media('max', 'md-tablet') {
             padding: 10px;
         }
 
         .histogram_title {
-
-            @media screen and (max-width: $md-tablet) {
+            @include media('max', 'md-tablet') {
                 font-size: 10px;
             }
         }
 
         .histogram__link {
-
-            @media screen and (max-width: $md-tablet) {
+            @include media('max', 'md-tablet') {
                 font-size: 10px;
             }
         }
 
         .histogram__subheader {
-
-            @media screen and (max-width: $md-tablet) {
+            @include media('max', 'md-tablet') {
                 margin-bottom: 5px;
             }
         }
 
         .histogram__number {
-
-            @media screen and (max-width: $md-tablet) {
+            @include media('max', 'md-tablet') {
                 font-size: 12px;
             }
         }
 
         .histogram__body {
-
-            @media screen and (max-width: $md-tablet) {
+            @include media('max', 'md-tablet') {
                 height: 30px;
             }
         }

@@ -15,16 +15,14 @@
 
     &_small {
         max-width: 210px;
-
-        @media screen and (max-width: $md-phone) {
+        @include media('max', 'md-phone') {
             padding: 5px 10px 0 10px;
             max-width: 100%;
         }
 
         .calendar__title {
             font-size: 14px;
-
-            @media screen and (max-width: $md-phone) {
+            @include media('max', 'md-phone') {
                 font-size: 12px;
                 white-space: nowrap;
                 margin-bottom: 10px;

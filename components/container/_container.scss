@@ -4,11 +4,11 @@
     max-width: 1110px;
     margin: 0 auto;
 
-    @media screen and (max-width: $md-phone) {
+    @include media('max', 'md-phone') {
         max-width: 345px;
     }
 
-    @media screen and (max-width: 1111px) {
+    @include media('max', 'md-pc') {
         padding: 0 5px;
     }
 }

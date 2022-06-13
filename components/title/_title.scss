@@ -23,7 +23,7 @@
         @include text(false, false, 50px, 64px);
         color: var(--black);
 
-        @media screen and (max-width: $md-phone) {
+        @include media('max', 'md-phone') {
             font-size: 28px;
             line-height: 38px;
         }

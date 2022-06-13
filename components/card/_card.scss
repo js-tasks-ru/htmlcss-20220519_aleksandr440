@@ -18,7 +18,7 @@
         gap: 10px;
     }
 
-    @media screen and (max-width: $md-phone) {
+    @include media('max', 'md-phone') {
         flex: 0 1 164px;
         padding: 0 5px;
         height: 210px;
@@ -45,7 +45,7 @@
             color: var(--purple-2);
         }
 
-        @media screen and (max-width: $md-phone) {
+        @include media('max', 'md-phone') {
             font-size: 16px;
         }
     }

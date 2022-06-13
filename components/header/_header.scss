@@ -3,7 +3,7 @@
 .header {
     padding: 24px 0 40px 0;
 
-    @media screen and (max-width: $md-phone) {
+    @include media('max', 'md-phone') {
         padding: 16px 0 69px 0;
     }
 
@@ -11,7 +11,7 @@
         margin-bottom: 38px;
         display: flex;
 
-        @media screen and (max-width: $md-phone) {
+        @include media('max', 'md-phone') {
             justify-content: center;
             margin-bottom: 48px;
         }
@@ -21,14 +21,14 @@
         background: #f9fafc;
         padding: 24px 0;
 
-        @media screen and (max-width: $md-phone) {
+        @include media('max', 'md-phone') {
             padding: 16px 0;
         }
     }
 
     &__inner {
 
-        @media screen and (max-width: $md-phone) {
+        @include media('max', 'md-phone') {
             display: flex;
             justify-content: center;
         }

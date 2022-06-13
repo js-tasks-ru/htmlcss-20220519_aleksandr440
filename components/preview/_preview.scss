@@ -7,7 +7,7 @@
     background: #f9fafc;
     padding: 0 0 174px 0;
 
-    @media screen and (max-width: $md-phone) {
+    @include media('max', 'md-phone') {
         padding-bottom: 30px;
         background: var(--white);
     }
@@ -15,7 +15,7 @@
     &__components {
         padding-top: 36px;
 
-        @media screen and (max-width: $md-phone) {
+        @include media('max', 'md-phone') {
             padding-top: 0;
         }
     }
@@ -46,7 +46,7 @@
         column-gap: 56px;
         padding-top: 36px;
 
-        @media screen and (max-width: $md-tablet) {
+        @include media('max', 'md-phone') {
             grid-template-columns: 1fr;
             padding-top: 0;
         }
@@ -54,7 +54,7 @@
 
     &__navigation {
 
-        @media screen and (max-width: $md-tablet) {
+        @include media('max', 'md-phone') {
             display: none;
         }
     }
@@ -93,7 +93,7 @@
         flex-direction: column;
         gap: 20px;
 
-        @media screen and (max-width: $md-tablet) {
+        @include media('max', 'md-tablet') {
             padding: 0;
             box-shadow: none;
             border-radius: 0;

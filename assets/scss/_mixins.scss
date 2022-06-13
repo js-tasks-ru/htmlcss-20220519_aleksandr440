@@ -1,3 +1,5 @@
+@import './variables';
+
 @mixin text($ff: false, $fw: false, $fz: false, $lh: false, $color: false) {
 
     @if $ff {
@@ -18,5 +20,15 @@
 
     @if $color {
         color: $color;
+    }
+}
+
+@mixin media($minmax, $md) {
+    @each $size, $res in $sizes {
+        @if $md == $size {
+            @media screen and (#{$minmax}-width: $res) {
+                @content;
+            }
+        }
     }
 }
