@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tooltip</title>
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css"
+    />
+    <link rel="stylesheet" href="../build/index.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="header header_components">
+        <div class="container">
+          <div class="header__inner">
+            <div class="logo">
+              <a href="#" class="logo__link">
+                <img
+                  src="../assets/images/logo.svg"
+                  alt="logo"
+                  class="logo__image"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <main class="preview preview__components">
+        <div class="container">
+          <div class="preview__inner preview__inner_components">
+            <nav class="preview__navigation">
+              <h3 class="title title_nav">Components</h3>
+              <ul class="preview__list">
+                <li class="preview__item">
+                  <a href="#" class="preview__link">Modal</a>
+                </li>
+                <li class="preview__item">
+                  <a href="#" class="preview__link preview__link_active"
+                    >Tooltip</a
+                  >
+                </li>
+                <li class="preview__item">
+                  <a href="#" class="preview__link">Avatar</a>
+                </li>
+                <li class="preview__item">
+                  <a href="./calendar.html" class="preview__link">Calendar</a>
+                </li>
+                <li class="preview__item">
+                  <a href="./histogram.html" class="preview__link">Histogram</a>
+                </li>
+                <li class="preview__item">
+                  <a href="#" class="preview__link">Custom form elements</a>
+                </li>
+                <li class="preview__item preview__item_main">
+                  <a href="../index.html" class="preview__link">Main page</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="preview__window">
+              <h4 class="title title_window">Tooltip</h4>
+              <div
+                class="preview__wrapper preview__wrapper_pl preview__wrapper_pt"
+              >
+                <div class="tooltip tooltip_components">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon tooltip__trigger"
+                  >
+                    <use href="../../assets/images/sprite.svg#help"></use>
+                  </svg>
+                  <div class="tooltip__bubble">Helper Text</div>
+                </div>
+              </div>
+              <div class="tabs tabs_components">
+                <input
+                  class="tabs__input"
+                  type="radio"
+                  name="tabs"
+                  id="html"
+                  checked
+                />
+                <input class="tabs__input" type="radio" name="tabs" id="scss" />
+                <div class="tabs__scroller">
+                  <div class="tabs__list">
+                    <label class="tabs__control" for="html">HTML</label>
+                    <label class="tabs__control" for="scss">SCSS</label>
+                  </div>
+                </div>
+                <div class="tabs__content tabs__content_html">
+                  <pre>
+                    <code class="language-html">
+      &lt;div class="tooltip"&gt;
+        &lt;svg xmlns="http://www.w3.org/2000/svg" class="icon tooltip__trigger"&gt;
+          &lt;use href="../../assets/images/sprite.svg#help"&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+        &lt;div class="tooltip__bubble"&gt;Helper Text&lt;/div&gt;
+      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+                <div class="tabs__content tabs__content_scss">
+                  <pre>
+                    <code class="language-scss">
+            .tooltip {
+              display: inline-block;
+              cursor: pointer;
+              position: relative;
+              &_components {
+                height: 24px;
+                width: 24px;
+              }
+              &_hover &__trigger ~ &__bubble {
+                visibility: visible;
+                opacity: 1;
+              }
+              &__bubble {
+                background: var(--blue-1);
+                color: var(--white);
+                @include text('Inter', 400, 16px, 1.5);
+                padding: 13px 21px;
+                box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+                border-radius: 10px;
+                position: absolute;
+                bottom: calc(100% + 6px);
+                left: 50%;
+                transform: translateX(-50%);
+                white-space: nowrap;
+                opacity: 0;
+                transition: opacity 0.4s ease-in-out;
+                visibility: hidden;
+                &:after {
+                  content: '';
+                  display: block;
+                  position: absolute;
+                  width: 0;
+                  height: 0;
+                  border: 6px solid transparent;
+                  border-top: 6px solid var(--blue-1);
+                  top: 100%;
+                  left: 50%;
+                  transform: translateX(-50%);
+                }
+              }
+              &__trigger:hover ~ &__bubble {
+                visibility: visible;
+                opacity: 1;
+              }
+            }
+                      
+                    </code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="footer footer_components">
+        <div class="container">
+          <div class="footer__inner">
+            <h2 class="title footer__title footer__title_components">
+              Reusable component library
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>

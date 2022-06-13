@@ -4,6 +4,14 @@
   display: inline-block;
   cursor: pointer;
   position: relative;
+  &_components {
+    height: 24px;
+    width: 24px;
+  }
+  &_hover &__trigger ~ &__bubble {
+    visibility: visible;
+    opacity: 1;
+  }
   &__bubble {
     background: var(--blue-1);
     color: var(--white);

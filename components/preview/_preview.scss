@@ -15,7 +15,14 @@
       padding-top: 0;
     }
   }
-
+  &__wrapper {
+    &_pl {
+      margin-left: 50px;
+    }
+    &_pt {
+      padding-top: 50px;
+    }
+  }
   &__inner_components {
     display: grid;
     grid-template-columns: 229px 1fr;
