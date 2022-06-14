@@ -1,0 +1,14 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+pre {
+    margin: 0;
+}

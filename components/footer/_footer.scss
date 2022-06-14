@@ -1,0 +1,38 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+.footer {
+    padding: 72px 0 136px 0;
+
+    @include media('max', 'md-phone') {
+        display: none;
+    }
+
+    &_components {
+        padding: 72px 0 56px 0;
+        background: #f9fafc;
+    }
+
+    &__inner {
+        text-align: center;
+        color: var(--black);
+    }
+
+    &__title {
+        @include text(false, 500, 38px, 48px);
+    }
+
+    &__title_components {
+        @include text(false, 500, 12px, 18px);
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--grey-3);
+    }
+
+    &__descr {
+        max-width: 630px;
+        margin: 0 auto;
+
+        @include text(false, 400, 16px, 24px);
+    }
+}

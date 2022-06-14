@@ -1,0 +1,33 @@
+@import './variables';
+
+@mixin text($ff: false, $fw: false, $fz: false, $lh: false, $color: false) {
+    @if $ff {
+        font-family: $ff, sans-serif;
+    }
+
+    @if $fw {
+        font-weight: $fw;
+    }
+
+    @if $fz {
+        font-size: $fz;
+    }
+
+    @if $lh {
+        line-height: $lh;
+    }
+
+    @if $color {
+        color: $color;
+    }
+}
+
+@mixin media($minmax, $md) {
+    @each $size, $res in $sizes {
+        @if $md == $size {
+            @media screen and (#{$minmax}-width: $res) {
+                @content;
+            }
+        }
+    }
+}

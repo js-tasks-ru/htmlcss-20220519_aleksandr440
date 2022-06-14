@@ -1,0 +1,27 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+.title {
+    padding: 0;
+    margin: 0;
+
+    &_nav {
+        @include text(false, 400, 24px, 26px);
+        color: #000;
+    }
+
+    &_window {
+        @include text(false, 400, 24px, 38px);
+        color: var(--grey-4);
+    }
+
+    &_header {
+        @include text(false, false, 50px, 64px);
+        color: var(--black);
+
+        @include media('max', 'md-phone') {
+            font-size: 28px;
+            line-height: 38px;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+/* Стилизация аккордеона */
+
+@import '../../assets/scss/mixins';
+
+.accordion {
+    max-width: 100%;
+
+    @include text('Inter', 400);
+
+    &__item {
+        display: block;
+        border: 1px solid var(--grey-3);
+        border-radius: 8px;
+        padding: 23px 32px;
+        @include text(false, false, 16px, 1.5);
+
+        &:not(::last-child) {
+            margin-bottom: 8px;
+        }
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+
+        &::-webkit-details-marker {
+            display: none;
+        }
+    }
+
+    &__title {
+        color: var(--black);
+    }
+
+    &__arrow {
+        transition: transform 0.2s ease-in-out;
+    }
+
+    &__descr {
+        color: var(--grey-4);
+    }
+
+    &__item[open] &__arrow {
+        transform: rotate(-180deg);
+    }
+}

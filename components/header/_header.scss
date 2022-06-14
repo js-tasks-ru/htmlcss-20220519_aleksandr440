@@ -1,0 +1,35 @@
+@import '../../assets/scss/variables';
+
+.header {
+    padding: 24px 0 40px 0;
+
+    @include media('max', 'md-phone') {
+        padding: 16px 0 69px 0;
+    }
+
+    &__top {
+        margin-bottom: 38px;
+        display: flex;
+
+        @include media('max', 'md-phone') {
+            justify-content: center;
+            margin-bottom: 48px;
+        }
+    }
+
+    &_components {
+        background: #f9fafc;
+        padding: 24px 0;
+
+        @include media('max', 'md-phone') {
+            padding: 16px 0;
+        }
+    }
+
+    &__inner {
+        @include media('max', 'md-phone') {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

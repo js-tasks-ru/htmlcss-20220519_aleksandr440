@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calendar</title>
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css"
+    />
+    <link rel="stylesheet" href="../build/index.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="header header_components">
+        <div class="container">
+          <div class="header__inner">
+            <div class="logo">
+              <a href="#" class="logo__link">
+                <img
+                  src="../assets/images/logo.svg"
+                  alt="logo"
+                  class="logo__image"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <main class="preview preview__components">
+        <div class="container">
+          <div class="preview__inner preview__inner_components">
+            <nav class="preview__navigation">
+              <h3 class="title title_nav">Components</h3>
+              <ul class="preview__list">
+                <li class="preview__item">
+                  <a href="#" class="preview__link">Modal</a>
+                </li>
+                <li class="preview__item">
+                  <a href="./tooltip.html" class="preview__link">Tooltip</a>
+                </li>
+                <li class="preview__item">
+                  <a href="./avatar.html" class="preview__link">Avatar</a>
+                </li>
+                <li class="preview__item">
+                  <a href="#" class="preview__link preview__link_active"
+                    >Calendar</a
+                  >
+                </li>
+                <li class="preview__item">
+                  <a href="./histogram.html" class="preview__link">Histogram</a>
+                </li>
+                <li class="preview__item">
+                  <a href="./custom-form-element.html" class="preview__link"
+                    >Custom form elements</a
+                  >
+                </li>
+                <li class="preview__item preview__item_main">
+                  <a href="../index.html" class="preview__link">Main page</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="preview__window">
+              <h4 class="title title_window">Calendar</h4>
+              <div class="calendar">
+                <h2 class="calendar__title">October 2019</h2>
+                <div class="calendar__wrapper">
+                  <div class="calendar__body">
+                    <div class="calendar__item calendar__item_day">Mon</div>
+                    <div class="calendar__item calendar__item_day">Tue</div>
+                    <div class="calendar__item calendar__item_day">Wed</div>
+                    <div class="calendar__item calendar__item_day">Thu</div>
+                    <div class="calendar__item calendar__item_day">Fri</div>
+                    <div class="calendar__item calendar__item_day">Sat</div>
+                    <div class="calendar__item calendar__item_day">Sun</div>
+                    <div
+                      class="calendar__item calendar__item_number calendar__item_first"
+                    >
+                      1
+                    </div>
+                    <div class="calendar__item calendar__item_number">2</div>
+                    <div class="calendar__item calendar__item_number">3</div>
+                    <div class="calendar__item calendar__item_number">4</div>
+                    <div class="calendar__item calendar__item_number">5</div>
+                    <div class="calendar__item calendar__item_number">6</div>
+                    <div class="calendar__item calendar__item_number">7</div>
+                    <div class="calendar__item calendar__item_number">8</div>
+                    <div class="calendar__item calendar__item_number">9</div>
+                    <div class="calendar__item calendar__item_number">10</div>
+                    <div class="calendar__item calendar__item_number">11</div>
+                    <div class="calendar__item calendar__item_number">12</div>
+                    <div class="calendar__item calendar__item_number">13</div>
+                    <div class="calendar__item calendar__item_number">14</div>
+                    <div class="calendar__item calendar__item_number">15</div>
+                    <div class="calendar__item calendar__item_number">16</div>
+                    <div class="calendar__item calendar__item_number">17</div>
+                    <div
+                      class="calendar__item calendar__item_number calendar__item_start"
+                    >
+                      18
+                    </div>
+                    <div
+                      class="calendar__item calendar__item_number calendar__item_select"
+                    >
+                      19
+                    </div>
+                    <div
+                      class="calendar__item calendar__item_number calendar__item_select"
+                    >
+                      20
+                    </div>
+                    <div
+                      class="calendar__item calendar__item_number calendar__item_select"
+                    >
+                      21
+                    </div>
+                    <div
+                      class="calendar__item calendar__item_number calendar__item_select"
+                    >
+                      22
+                    </div>
+                    <div
+                      class="calendar__item calendar__item_number calendar__item_end"
+                    >
+                      23
+                    </div>
+                    <div class="calendar__item calendar__item_number">24</div>
+                    <div class="calendar__item calendar__item_number">25</div>
+                    <div class="calendar__item calendar__item_number">26</div>
+                    <div class="calendar__item calendar__item_number">27</div>
+                    <div class="calendar__item calendar__item_number">28</div>
+                    <div class="calendar__item calendar__item_number">29</div>
+                    <div class="calendar__item calendar__item_number">30</div>
+                    <div class="calendar__item calendar__item_number">31</div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs tabs_components">
+                <input
+                  class="tabs__input"
+                  type="radio"
+                  name="tabs"
+                  id="html"
+                  checked
+                />
+                <input class="tabs__input" type="radio" name="tabs" id="scss" />
+                <div class="tabs__scroller">
+                  <div class="tabs__list">
+                    <label class="tabs__control" for="html">HTML</label>
+                    <label class="tabs__control" for="scss">SCSS</label>
+                  </div>
+                </div>
+                <div class="tabs__content tabs__content_html">
+                  <pre>
+                    <code class="language-html">
+   &lt;div class=&quot;calendar&quot;&gt;
+    &lt;h2 class=&quot;calendar__title&quot;&gt;October 2019&lt;/h2&gt;
+    &lt;div class=&quot;calendar__wrapper&quot;&gt;
+      &lt;div class=&quot;calendar__body&quot;&gt;
+        &lt;div class=&quot;calendar__item calendar__item_day&quot;&gt;Mon&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_day&quot;&gt;Tue&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_day&quot;&gt;Wed&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_day&quot;&gt;Thu&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_day&quot;&gt;Fri&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_day&quot;&gt;Sat&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_day&quot;&gt;Sun&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_number calendar__item_first&quot;&gt;1&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_number&quot;&gt;2&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_number&quot;&gt;3&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_number&quot;&gt;4&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_number&quot;&gt;5&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_number&quot;&gt;6&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_number&quot;&gt;7&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_number&quot;&gt;8&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_number&quot;&gt;9&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_number&quot;&gt;10&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_number&quot;&gt;11&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_number&quot;&gt;12&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_number&quot;&gt;13&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_number&quot;&gt;14&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_number&quot;&gt;15&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_number&quot;&gt;16&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_number&quot;&gt;17&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_number calendar__item_start&quot;&gt;18&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_number calendar__item_select&quot;&gt;19&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_number calendar__item_select&quot;&gt;20&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_number calendar__item_select&quot;&gt;21&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_number calendar__item_select&quot;&gt;22&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_number calendar__item_end&quot;&gt;23&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_number&quot;&gt;24&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_number&quot;&gt;25&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_number&quot;&gt;26&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_number&quot;&gt;27&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_number&quot;&gt;28&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_number&quot;&gt;29&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_number&quot;&gt;30&lt;/div&gt;
+        &lt;div class=&quot;calendar__item calendar__item_number&quot;&gt;31&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+                <div class="tabs__content tabs__content_scss">
+                  <pre>
+                    <code class="language-scss">
+                .calendar {
+                  box-sizing: border-box;
+                  width: 100%;
+                  max-width: 304px;
+                  border: 1px solid var(--grey-3);
+                  border-radius: 8px;
+                  background: var(--white);
+                  padding: 28px 30px 20px 26px;
+                  font-family: 'Inter', sans-serif;
+                
+                  flex: 1;
+                  &_small {
+                    max-width: 210px;
+                    @media screen and (max-width: $md-phone) {
+                      padding: 5px 10px 0 10px;
+                      max-width: 100%;
+                    }
+                    .calendar__title {
+                      font-size: 14px;
+                      @media screen and (max-width: $md-phone) {
+                        font-size: 12px;
+                        white-space: nowrap;
+                        margin-bottom: 10px;
+                      }
+                    }
+                    .calendar__item {
+                      font-size: 10px;
+                    }
+                  }
+                
+                  &__title {
+                    padding: 0;
+                    margin: 0 0 24px 0;
+                    text-align: center;
+                    @include text(false, 600, 20px, 1.2, #334d6e);
+                  }
+                
+                  &__wrapper {
+                    padding-bottom: 100%;
+                    position: relative;
+                  }
+                
+                  &__body {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    display: grid;
+                    grid-template-columns: repeat(7, 1fr);
+                    grid-template-rows: repeat(7, 1fr);
+                  }
+                
+                  &__item {
+                    font-weight: 400;
+                    line-height: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &_day {
+                      font-size: 14px;
+                      color: #90a0b7;
+                    }
+                    &_number {
+                      font-size: 16px;
+                      color: #334d6e;
+                    }
+                    &_first {
+                      grid-column-start: 5;
+                    }
+                    &_start,
+                    &_end {
+                      background: var(--blue-1);
+                      color: var(--white);
+                    }
+                    &_select {
+                      background: rgba(160, 177, 245, 0.2);
+                    }
+                  }
+                }
+                    </code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="footer footer_components">
+        <div class="container">
+          <div class="footer__inner">
+            <h2 class="title footer__title footer__title_components">
+              Reusable component library
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>

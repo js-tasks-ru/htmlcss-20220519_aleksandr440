@@ -1,0 +1,14 @@
+@import '../../assets/scss/variables';
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+
+    @include media('max', 'md-phone') {
+        max-width: 345px;
+    }
+
+    @include media('max', 'md-pc') {
+        padding: 0 5px;
+    }
+}

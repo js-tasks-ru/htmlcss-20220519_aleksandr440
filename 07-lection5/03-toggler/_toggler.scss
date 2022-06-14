@@ -1,0 +1,70 @@
+@import '../../assets/scss/mixins';
+
+.toggle {
+    display: inline-block;
+    position: relative;
+
+    &__input {
+        appearance: none;
+        position: absolute;
+
+        &:checked ~ .toggle__wrapper .toggle__control {
+            background: var(--blue-1);
+            border-color: var(--blue-1);
+        }
+
+        &:checked ~ .toggle__wrapper .toggle__control::after {
+            background: var(--white);
+            left: 24px;
+        }
+
+        &:disabled ~ .toggle__wrapper .toggle__control {
+            background: var(--grey-2);
+            border-color: var(--grey-2);
+        }
+
+        &:disabled ~ .toggle__wrapper .toggle__control::after {
+            background: var(--grey-3);
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &__control {
+        width: 52px;
+        height: 28px;
+        border-radius: 16px;
+        background: var(--white);
+        border: 1px solid var(--grey-2);
+        border-radius: 16px;
+        position: relative;
+    }
+
+    &__control::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: var(--grey-2);
+        top: 50%;
+        transform: translateY(-50%);
+        left: 2px;
+    }
+
+    &__control,
+    &__control::after {
+        transition: all .2s linear;
+    }
+
+    &__title {
+
+        @include text('Inter', 400, 16px, 24px);
+        color: var(--grey-4);
+    }
+}

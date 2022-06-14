@@ -1,0 +1,78 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+.tabs {
+    position: relative;
+    background: #f9fafc;
+
+    &_components {
+        background: var(--white);
+    }
+
+    &__input {
+        appearance: none;
+        position: absolute;
+    }
+
+    &__list {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__scroller {
+        background: var(--white);
+        border-bottom: 1px solid var(--grey-2);
+        overflow-x: auto;
+    }
+
+    &__control {
+        cursor: pointer;
+        padding-bottom: 8px;
+
+        @include text(false, 400, 16px, 24px);
+        color: var(--grey-3);
+        white-space: nowrap;
+    }
+
+    &__inner {
+        padding-top: 68px;
+        background: #f9fafc;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+
+        @include media('max', 'md-phone') {
+            justify-content: space-between;
+            gap: 5px;
+        }
+    }
+
+    #all-tab:checked ~ .tabs__scroller [for='all-tab'],
+    #elements:checked ~ .tabs__scroller [for='elements'],
+    #containers:checked ~ .tabs__scroller [for='containers'],
+    #templates:checked ~ .tabs__scroller [for='templates'],
+    #html:checked ~ .tabs__scroller [for='html'],
+    #scss:checked ~ .tabs__scroller [for='scss'] {
+        color: var(--black);
+        border-bottom: 5px solid var(--black);
+    }
+
+    #all-tab:checked ~ .tabs__content_all-tab,
+    #elements:checked ~ .tabs__content_elements,
+    #containers:checked ~ .tabs__content_containers,
+    #templates:checked ~ .tabs__content_templates,
+    #html:checked ~ .tabs__content_html,
+    #scss:checked ~ .tabs__content_scss {
+        display: block;
+    }
+
+    #all-tab:not(:checked) ~ .tabs__content_all-tab,
+    #elements:not(:checked) ~ .tabs__content_elements,
+    #containers:not(:checked) ~ .tabs__content_containers,
+    #templates:not(:checked) ~ .tabs__content_templates,
+    #html:not(:checked) ~ .tabs__content_html,
+    #scss:not(:checked) ~ .tabs__content_scss {
+        display: none;
+    }
+}

@@ -1,0 +1,22 @@
+.hljs {
+    color: var(--blue-1);
+    background-color: var(--white);
+}
+
+.hljs-tag .hljs-attr {
+    color: var(--purple-2);
+    font-weight: 600;
+}
+
+.hljs-tag .hljs-name,
+.hljs-selector-class,
+.hljs-selector-id {
+    color: var(--pink);
+    font-weight: 600;
+}
+
+.hljs-string,
+.hljs-number {
+    color: var(--green);
+    font-weight: 600;
+}

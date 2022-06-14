@@ -1,61 +1,60 @@
 <!DOCTYPE html>
 <!-- Страница с кнопкой переключения -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./toggler.css">
-        <style>
-          .togglers {
-            padding-top: 50px;
-          }
+  <head>
+    <link rel="stylesheet" href="../../build/index.css" />
+    <style>
+      .togglers {
+        padding-top: 50px;
+      }
 
-          .togglers__title {
-            font-family: 'Inter';
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 18px;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            color: var(--grey-3);
-          }
+      .togglers__title {
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--grey-3);
+      }
 
-          .togglers__wrapper {
-            display: -webkit-flex;
-            display: -ms-flex;
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-          }
-        </style>
-    </head>
-    <body>
-      <div class="togglers">
-        <div class="container">
-          <div class="togglers__wrapper">
-            <h2 class="togglers__title">Toggle Button</h2>
-            <label class="toggle">
-              <input class="toggle__input" type="checkbox">
-              <div class="toggle__wrapper">
-                <div class="toggle__control"></div>
-                <span class="toggle__title">Off</span>
-              </div>
-            </label>
-            <label class="toggle">
-              <input class="toggle__input" type="checkbox" checked>
-              <div class="toggle__wrapper">
-                <div class="toggle__control"></div>
-                <span class="toggle__title">On</span>
-              </div>
-            </label>
-            <label class="toggle">
-              <input class="toggle__input" type="checkbox" disabled>
-              <div class="toggle__wrapper">
-                <div class="toggle__control"></div>
-                <span class="toggle__title">Disabled</span>
-              </div>
-            </label>
-          </div>
+      .togglers__wrapper {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="togglers">
+      <div class="container">
+        <div class="togglers__wrapper">
+          <h2 class="togglers__title">Toggle Button</h2>
+          <label class="toggle">
+            <input class="toggle__input" type="checkbox" />
+            <div class="toggle__wrapper">
+              <div class="toggle__control"></div>
+              <span class="toggle__title">Off</span>
+            </div>
+          </label>
+          <label class="toggle">
+            <input class="toggle__input" type="checkbox" checked />
+            <div class="toggle__wrapper">
+              <div class="toggle__control"></div>
+              <span class="toggle__title">On</span>
+            </div>
+          </label>
+          <label class="toggle">
+            <input class="toggle__input" type="checkbox" disabled />
+            <div class="toggle__wrapper">
+              <div class="toggle__control"></div>
+              <span class="toggle__title">Disabled</span>
+            </div>
+          </label>
         </div>
       </div>
-    </body>
+    </div>
+  </body>
 </html>
